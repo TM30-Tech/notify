@@ -1,0 +1,32 @@
+{
+    "name": "tm30/notify",
+    "description": "A laravel notification service wrapper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VictorAlagwu",
+            "email": "victoralagwu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TM30\\Notify\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TM30\\Notify\\NotifyServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "php" : "^7.2",
+        "illuminate/config": "5.8.*|^6.0",
+        "illuminate/database": "5.8.*|^6.0",
+        "illuminate/support": "5.8.*|^6.0"
+    },
+    "minimum-stability": "dev"
+}
